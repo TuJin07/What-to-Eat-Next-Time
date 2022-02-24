@@ -1,0 +1,78 @@
+/* miniprogram/pages/lottery/lottery.wxss */
+page {
+  height: 100%;
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "幼圆";
+}
+
+#lottery{
+  width: 100%;
+  height: 75%;
+  /* border:1px solid silver; */
+
+  font-weight: 800;
+  font-size: 80rpx;
+
+}
+
+#bottonBar{
+  width: 100%;
+  height: 10%;
+}
+
+#button{
+  width: 60%; 
+  height: 100%; 
+  display:flex;
+  flex-direction:row;
+  background-color: #aec8ed;
+}
+
+#restaurant{
+  width: 100%;
+  height: 20%;
+  /* border:1px solid silver; */
+  display: flex;
+  /*上下左右居中*/
+  justify-content: center;
+  align-items: center;
+ }
+
+#image{
+  padding-top: 80rpx;
+  padding-left: 100rpx;
+  padding-right: 100rpx;
+  padding-bottom: 20rpx;
+
+  width: 450rpx;
+  height: 450rpx;
+}
+
+#check{
+  width: 100%;
+}
+
+#box{
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+}
+
+.center{
+  text-align:center;
+  flex-direction: column;
+}
+
+.bar{
+  text-align: center;
+  height: 10%;
+  width: 100%;
+}
+
+.msg{
+  width: 100%;
+  text-align:center;
+}

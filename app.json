@@ -1,0 +1,35 @@
+{
+    "pages": [
+        "pages/lottery/lottery",
+        "pages/restaurant/restaurant",
+        "pages/restaurant/clove/clove",
+        "pages/restaurant/begonia/begonia",
+        "pages/restaurant/bamboo/bamboo",
+        "pages/restaurant/complex/complex"
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTitleText": "下顿吃什么",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [{
+                "pagePath": "pages/lottery/lottery",
+                "text": "抽 取",
+                "iconPath": "images/首页.png",
+                "selectedIconPath": "images/首页（选中）.png"
+            },
+            {
+                "pagePath": "pages/restaurant/restaurant",
+                "text": "自 定 义",
+                "iconPath": "images/我的.png",
+                "selectedIconPath": "images/我的（选中）.png"
+            }
+        ],
+        "selectedColor": "#aec8ed"
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}

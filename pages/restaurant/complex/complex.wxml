@@ -1,0 +1,25 @@
+<view class="import">
+    <text>
+        勾选的商家不会出现在抽签结果里~
+    </text>
+</view>
+
+<view class="loading" class="import" wx:if="{{isLoading}}">
+    <text style="font-size: medium; color:dimgray;">加载中...请稍侯...</text>
+</view>
+
+<view class="businessList">
+    <checkbox-group bindchange="checkboxChange">
+        <view class="business" wx:for="{{list}}" wx:key="id" style="background: {{backgroundColor}};">
+            <checkbox checked="{{checked[index]}}" value="{{item.name}}">
+                <text style="color: {{fontColor}};" space="ensp">  {{item.name}} </text>
+            </checkbox>
+        </view>
+    </checkbox-group>
+</view>
+
+<view class="endOfList">
+    <text style="color: #b3bbc0;">
+                我是有底线的！(/ﾟДﾟ)/
+    </text>
+</view>

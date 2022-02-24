@@ -1,0 +1,33 @@
+<!--miniprogram/pages/lottery/lottery.wxml-->
+<view id="lottery" class="center" style="background: {{backgroundColor}};">
+  <view id="picture">
+    <image id="image" src="{{pic}}" alt="网络不佳呢。。"></image>
+  </view>
+  <view class="center">
+    <text>{{food}}</text>
+  </view>
+</view>
+
+<view class="bar" style="background: {{backgroundColor}};"></view>
+
+<view id="buttonBar" class="bar" style="background: {{backgroundColor}};">
+  <view class="center">
+    <button id="button" type="button" class="center" bindtap="clickStartButton" >
+      <text class="msg" style="color: white; font-size: larger" space="ensp">{{click}}</text>
+    </button>
+  </view>
+</view>
+
+<view class="bar" style="background: {{backgroundColor}};">
+  <text class="msg" style="color:#c4d0d1">从下面选择想去的餐厅叭~</text>
+</view>
+
+<view id="restaurant" class="bar" style="background: {{backgroundColor}};">
+  <checkbox-group bindchange="HandelItemChange" >
+    <view id="check">
+      <checkbox id="box" value="{{item.value}}" wx:for="{{list}}" wx:key="id">
+        {{item.name}}
+      </checkbox>
+    </view>
+  </checkbox-group>
+</view>

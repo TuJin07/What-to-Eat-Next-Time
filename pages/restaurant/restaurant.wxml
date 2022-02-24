@@ -1,0 +1,36 @@
+<view class="import">你可以自定义哪些商家会出现在抽签列表中喔~</view>
+
+<view class="list">
+    <navigator url="{{item.url}}" wx:for="{{list}}">
+        <view class="location" style="background: {{item.color}};">
+            <text style="color: {{fontColor}};">{{item.name}}</text>
+        </view>
+    </navigator>
+</view>
+
+
+<!-- <view class="list">
+    <navigator url="/pages/restaurant/dingXiang/dingXiang">
+        <view class="location" style="background: #6ca7cc91;">
+            <text style="color: {{fontColor}};">丁香餐厅</text>
+        </view>
+    </navigator>
+
+    <navigator url="/pages/restaurant/haiTang/haiTang">
+        <view class="location" style="background: #3f8bc591;">
+            <text style="color: {{fontColor}};">海棠餐厅</text>
+        </view>
+    </navigator>
+
+    <navigator url="/pages/restaurant/zhuYuan/zhuYuan">
+        <view class="location" style="background: #23659e8c;">
+            <text style="color: {{fontColor}};">竹园餐厅</text>
+        </view>
+    </navigator>
+
+    <navigator url="/pages/restaurant/zongHeLou/zongHeLou">
+        <view class="location" style="background: #16437f96;">
+            <text style="color: {{fontColor}};">综 合 楼</text>
+        </view>
+    </navigator>
+</view> -->
